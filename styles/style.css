@@ -5,12 +5,14 @@
 body{
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
-    background-color: #E5E5E5;
+    background-color: white;
 }
 header{
     color: white;
     overflow: hidden;
 }
+
+/* header styles goes here */
 .copa-header{
     background-color:blue;
     display: grid;
@@ -48,6 +50,8 @@ h1{
     width: 556px;
     height: 438px;
 }
+
+/* main section's style goes here */
 main{
     margin-top: 70px;
     display: flex;
@@ -70,6 +74,10 @@ main{
     width: 300px;
     height: 444px;
     overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+h3{
+    font-weight: 700;
 }
 .player img{
     width: 300px;
@@ -81,17 +89,27 @@ main{
 
 /* footer styles goes here */
 footer{
+    margin-top: 158px;
+    margin-bottom: 63px;
+    background-color: white;
     text-align: center;
 }
 footer img{
     width: 485px;
 }
 footer a{
+    margin: 5px;
     text-decoration: none;
 }
 .footer-icon-bg-color{
-    background-color: gray;
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #e9e3e3;
 }
+.copy-right p{
+    font-size: 18px;
+}
+
 /* Media Queries */
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
