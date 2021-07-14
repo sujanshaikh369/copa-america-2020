@@ -1,0 +1,49 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #E5E5E5; */
+}
+
+footer{
+    text-align: center;
+}
+footer img{
+    width: 485px;
+}
+footer a{
+    text-decoration: none;
+}
+.footer-icon-bg-color{
+    background-color: gray;
+}
+/* Media Queries */
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+    .container{
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+.players, .blogs, .courses{
+    /* background-color: red; */
+    /* grid-template-columns: repeat(1, 1fr); */
+}
+.player, .blogs, .courses{
+    /* flex-direction: column; */
+}
+
+}
+/* Tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    /* .container{
+        width: 100%;
+    } */
+    /* .players, .courses{
+    grid-template-columns: repeat(2, 1fr);
+} */
+/* .blogs{
+    grid-template-columns: repeat(1, 1fr);
+} */
+}
