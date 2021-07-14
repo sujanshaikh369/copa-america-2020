@@ -219,15 +219,17 @@ main{
     margin: 0 auto;
 }
 .container{
+    margin: 0 auto;
     display: grid;
     align-items: center;
     /* justify-content: center; */
     background-color: white;
 }
-.players{
+.players,.copa-header{
+
     display:grid ;
-    /* align-items: center; */
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
     grid-template-columns: repeat(1, 1fr);
 }
 /* .player{
