@@ -9,17 +9,25 @@ body{
 }
 header{
     color: white;
+    overflow: hidden;
 }
 .copa-header{
     background-color:blue;
     display: grid;
     grid-template-columns: repeat(2,  1fr);
+    
 }
 
 .header-left{
     padding: 207px 102px 240px 156px;
 
 }
+
+.copa-header:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
+
 .header-right{
     padding: 153px 140px 86px 0px;
 
@@ -70,6 +78,8 @@ main{
 .player p{
     width: 300px;
 }
+
+/* footer styles goes here */
 footer{
     text-align: center;
 }
