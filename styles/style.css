@@ -54,13 +54,19 @@ h1{
 /* main section's style goes here */
 main{
     margin-top: 70px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    align-items: center;
 }
 .container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
     background-color: white;
 }
 /* famous-players-profile-styles */
+.famous-player-section{
+    margin-bottom: 100px;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -110,31 +116,123 @@ footer a{
     font-size: 18px;
 }
 
+
+  
+  /* sign-up-users styles goes here */
+
+.upper-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+.signup-container {
+    max-width: 1050px;
+    width: 100%;
+    background-color: white;
+    padding: 25px 30px;
+}
+
+.signup-container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.signup-container .title::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: blueviolet;
+    left: 0;
+    bottom: 0;
+}
+
+.signup-container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100%/2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #aeaaaf;
+}
+
+form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    background: rgb(149, 142, 187);
+    justify-content: space-between;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: rgb(223, 219, 219);
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+
 /* Media Queries */
 /* Mobile Devices */
 @media only screen and (max-width: 688px) {
-    .container{
-        /* width: 100%; */
-        /* text-align: center; */
-    }
-.players, .blogs, .courses{
-    /* background-color: red; */
-    /* grid-template-columns: repeat(1, 1fr); */
+main{
+    margin: 0 auto;
 }
-.player, .blogs, .courses{
-    /* flex-direction: column; */
+.container{
+    display: grid;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: white;
 }
+.players{
+    display:grid ;
+    /* align-items: center; */
+    /* justify-content: center; */
+    grid-template-columns: repeat(1, 1fr);
+}
+/* .player{
+    flex-direction: column;
+} */
 
 }
-/* Tablet devices */
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-    /* .container{
-        width: 100%;
-    } */
-    /* .players, .courses{
-    grid-template-columns: repeat(2, 1fr);
-} */
-/* .blogs{
-    grid-template-columns: repeat(1, 1fr);
-} */
-}
+
